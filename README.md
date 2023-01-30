@@ -1,7 +1,3 @@
----
-marp: true
----
-
 # Enunciado tarea - tarjeta resumen compra
 Este es un pequeño proyecto de introducción/repaso de maquetación CSS
 
