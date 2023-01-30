@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;800;900&display=swap");
+
+/* ESTILOS GENERALES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-palido: hsl(225, 100%, 94%);
+  --azul-brillante: hsl(245, 75%, 52%);
+  --azul-muy-palido: hsl(225, 100%, 98%);
+  --azul-desaturado: hsl(224, 23%, 55%);
+  --azul-oscuro: hsl(223, 47%, 23%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #3f44ac,
+    #4857b9,
+    #536ac5,
+    #607cd0,
+    #6f8fda,
+    #70a0e4,
+    #76b1ec,
+    #80c1f2,
+    #87d2f6,
+    #96e2f7,
+    #acf1f8,
+    #c6fffb
+  );
+  overflow: hidden;
+}
+
+/* ESTILOS DE LA CARD */
+.card {
+  width: 90%;
+  max-width: 400px;
+  min-width: 330px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-info-img {
+  width: 100%;
+  height: 200px;
+  background-color: #f1f1f1;
+  order: -1;
+}
+
+.plan-info-main-text {
+  margin: 0 0 0.5rem;
+  width: 80%;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.plan-info {
+  width: 80%;
+  padding: 1rem;
+  background-color: var(--azul-muy-palido);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.plan-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-info-text span:first-child {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: var(--azul-oscuro);
+}
+
+.plan-info-text span:last-child {
+  font-size: 0.8rem;
+}
+
+.plan-info-main-text {
+  color: var(--azul-desaturado);
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+}
+
+.btn-pago {
+  width: 80%;
+  padding: 1rem;
+  background-color: var(--azul-brillante);
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 10px;
+  margin: 1rem 0 0.2rem;
+}
+
+.btn-cancelar {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  background-color: #fff;
+  color: var(--azul-desaturado);
+  font-weight: 800;
+  text-align: center;
+}
+
+.btn-pago:hover {
+  background-color: var(--azul-desaturado);
+}
+
+.btn-cancelar:hover {
+  color: rgba(58, 2, 2, 0.849);
+}
